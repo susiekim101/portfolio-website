@@ -1,17 +1,39 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+
 const NavBar = () => {
-    const selected = 'bg-gray-300 px-4 py-1 rounded-2xl';
-    const notselected = 'px-4 py-1'
+    const tabs = [
+        {name: 'About', path: '/'},
+        {name: 'Projects', path: '/projects'},
+        {name: 'Experiences', path: '/experiences'},
+    ]
 
     return (
         <div className="w-full flex flex-row justify-center items-center text-md">
             <div className="basis-1/3 items-center">susiekim.dev</div>
 
-            <div className="basis-1/3 flex flex-row justify-between items-center bg-gray-100 rounded-3xl px-1 py-1">
-                <NavLink to="/" className={({ isActive }) => isActive ? selected : notselected}>About</NavLink>
-                <NavLink to="/projects" className={({ isActive }) => isActive ? selected : notselected}>Projects</NavLink>
-                <NavLink to="/experiences"className={({ isActive }) => isActive ? selected : notselected}>Experience</NavLink>
-                <NavLink to="/blog" className={({ isActive }) => isActive ? selected : notselected}>Blog</NavLink>
+            <div>
+                {tabs.map((tab) => (
+                    <NavLink key={tab.path} to={tab.path} className="relative px-4 py-2 z-10 transition-colors duration-300">
+                        {({isActive}) => (
+                            <>
+                                <span className={isActive ? "text-black" : "text-gray-500"}>{tab.name}</span>
+                                {isActive && (
+                                    <motion.div
+                                    layoutId="active-pill"
+                                    className="absolute inset-0 bg-white rounded-3xl -z-10 shadow-sm"
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 380,
+                                        damping: 30
+                                    }}
+                                    />
+                                )}
+                            </>
+                        )}
+                    </NavLink>
+                ))}
+                <a className="px-4 py-2 text-gray-500" href="https://dev-blog-five-lac.vercel.app/" target="_blank">Blog</a>
             </div>
 
             <div className="basis-1/3"/>

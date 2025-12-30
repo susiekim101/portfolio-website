@@ -40,26 +40,6 @@ const PROJECTS: Project[] = [
         // ]
     },
     {
-        title: "Study Planner",
-        date: "June 2025",
-        description:  "SQL-based tabular producitivty tool to log study sessions and user statistics",
-        skills: ["Node.js", "Express", "Typescript", "PostgreSQL", "Zod", "Docker", "JWT"],
-        repo: "https://github.com/susiekim101/study-planner",
-        // longDescription: [
-        //     "Engineered a modular REST API using Express and TypeScript to log study sessions and generate real-time user statistics",
-        //     "Designed a normalized PostgreSQL schema with relational tables for users, subjects, sessions, and stats",
-        //     "Implemented Zod-based input validation to enforce data integrity and strict type safety across endpoints",
-        //     "Integrated JWT authentication with middleware to protect private routes and manage secure user access",
-        // ]
-    },
-    {
-        title: "BruinBites",
-        date: "January 2025 – June 2025",
-        description:  "Mobile application to let students rate and review university dining halls.",
-        skills: ["SwiftUI", "Python", "BeautifulSoup", "Firebase"],
-        repo: "https://github.com/susiekim101/BruinBites"
-    },
-    {
         title: "POSCO Reinforcement Learning",
         date: "June 2025 – August 2025",
         description: "A reinforcement learning simulation using Isaac Lab that defines the markov decision process problem for construction work for POSCO (South Korean steel manufacturer).",
@@ -75,7 +55,6 @@ const PROJECTS: Project[] = [
         //     "Engineered custom reward functions, integrating 30+ observation states in 32 training environments, domain randomization, and curriculum learning to accelerate convergence"
         // ]
     },
-
     {
         title: "Personal Website",
         date: "July 2025",

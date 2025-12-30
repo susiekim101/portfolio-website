@@ -5,10 +5,10 @@ import PROJECTS from "./ProjectList";
 const Projects = () => {
 
     return (
-        <div className="flex flex-col gap-10 m-5">
+        <div className="flex flex-col gap-10 my-5 mx-[10rem]">
             <NavBar/>
             <p className="text-xl font-bold">Projects</p>
-            <div className="grid grid-cols-1 gap-5">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
                 { PROJECTS.map((project) => (
                     <ProjectCard project={project}/>
                 ))}
