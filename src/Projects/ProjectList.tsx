@@ -4,9 +4,11 @@ export interface Project {
     description: string,
     skills: string[],
     repo: string,
+    link?: string,
     media?: {
         type: "image" | "video";
-        src: string;
+        thumbnail: string;
+        src?: string;
         caption?: string;
         poster?: string;
     };
@@ -19,6 +21,11 @@ const PROJECTS: Project[] = [
         description:  "A archive blog of personal insights and self explanations to Leetcode problems. Currently building a blog where I post about recent Leetcode problems, so I can revist them in the future and recollect how I solved them :)",
         skills: ["Next.js", "React", "MongoDB", "Vercel", "TypeScript", "Tailwind"],
         repo: "https://github.com/susiekim101/dev-blog",
+        link: "https://dev-blog-five-lac.vercel.app/",
+        media: {
+            type: "image",
+            thumbnail: "src/assets/dev-blog.png",
+        },
     },
     {
         title: "Bruin Plan",
@@ -27,9 +34,9 @@ const PROJECTS: Project[] = [
         skills: ["React", "MySQL", "Node.js", "Express", "Typescript", "Tailwind", "Axios", "Cucumber", "Jest", "Playwright", "JWT"],
         repo: "https://github.com/susiekim101/bruin-plan",
         media: {
-            type: "video",
-            src: "https://youtu.be/892KyBB5XXc",
-            caption: "Demo video of Bruin Plan including the landing page, user dashboard, and public bulletin"
+            type: "image",
+            thumbnail: "src/assets/bruin-plan-thumbnail.png",
+            src: "src/assets/bruin-plan-demo.gif",
         },
         // longDescription: [
         //     "A visual drag-an-drop interface to add courses to the user dashboard with secure user authentication with server-side JWT",
@@ -47,7 +54,8 @@ const PROJECTS: Project[] = [
         repo: "https://github.com/susiekim101/posco-mdp",
         media: {
             type: "video",
-            src: "/posco-demo.mov",
+            thumbnail: "src/assets/POSCO-thumbnail.png",
+            src: "src/assets/brick-demo.mp4",
             caption: "Demonstration of brick simulation using Isaac Sim"
         },
         // longDescription: [
@@ -69,8 +77,9 @@ const PROJECTS: Project[] = [
         skills: ['React', 'Node.js', 'Tailwind', 'Google Cloud Platform', 'Gemini API'],
         repo: "https://github.com/susiekim101/",
         media: {
-            type: "video",
-            src: "/stile-demo.mov",
+            type: "image",
+            thumbnail: "src/assets/stile-thumbnail.png",
+            src: "src/assets/stile-demo.gif",
             caption: "Initial ideation for Tori in the House at a hackathon. Currently working on new iteration of this original project."
         },
         // longDescription: [
@@ -104,7 +113,7 @@ const PROJECTS: Project[] = [
         // ],
         media: {
             type: "video",
-            src: "/clouds2campus-demo.mp4",
+            thumbnail: "/clouds2campus-demo.mp4",
             caption: "Demo video of Clouds2Campus, including log in/sign up features and file upload with AI extraction"
         }
     },
