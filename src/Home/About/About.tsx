@@ -3,9 +3,9 @@ import headshot from '../../assets/Susie_Kim_Headshot.png';
 const About = () => {
 
     return (
-        <div className="flex flex-col md:flex-row justify-center items-center gap-[3rem]">
-            <div className="flex">
-                <img src={headshot} alt="Susie Kim headshot" className="w-full aspect-[1/1] object-cover rounded-full"></img>
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-[3rem]">
+            <div className="flex justify-center items-center">
+                <img src={headshot} alt="Susie Kim headshot" className="w-[60%] lg:w-full aspect-[1/1] object-cover rounded-full"></img>
             </div>
             <div className="flex flex-col gap-5">
                 <p className="text-3xl font-bold">👋 Hi, I'm Susie!</p>
