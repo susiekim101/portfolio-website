@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { House, Hammer, CalendarDays, PenLine} from 'lucide-react';
+import { CodeXml, House, Hammer, CalendarDays, PenLine} from 'lucide-react';
 
 const DesktopNavBar = () => {
     const tabs = [
@@ -11,7 +11,12 @@ const DesktopNavBar = () => {
 
 
     return (
-        <div className="flex flex-row w-full justify-center items-center text-sm lg:text-md">
+        <div className="flex flex-row w-full justify-between items-center text-sm lg:text-md backdrop-blur-sm pt-3 pb-2 border-b border-white px-[10rem]">
+            <div className="flex gap-1 justify-content items-center basis-1/3">
+                <CodeXml className="text-amber-300 w-5 h-5"/>
+                susiekim.dev
+            </div>
+
             <div className="bg-amber-100/50 flex bg-amber-100 shadow-md border border-white/20 px-1 py-1 rounded-3xl backdrop-blur-md">
                 {tabs.map((tab) => {
                     const Icon = tab.icon;
@@ -59,6 +64,8 @@ const DesktopNavBar = () => {
                     <a className="py-2 text-gray-700" href="https://dev-blog-five-lac.vercel.app/" target="_blank">Blog</a>
                 </div>
             </div>
+
+            <div className="flex basis-1/3"/>
         </div>
     );
 }

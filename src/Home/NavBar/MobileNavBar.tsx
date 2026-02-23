@@ -10,7 +10,7 @@ const MobileNavBar = () => {
     ]
 
     return (
-        <div className="flex flex-row w-full justify-center items-center text-sm lg:text-md">
+        <div className="flex flex-row justify-center items-center text-sm lg:text-md">
             <div className="flex bg-amber-100/50 shadow-md border border-white/20 px-1 py-1 rounded-3xl backdrop-blur-md">
                 {tabs.map((tab) => {
                     const Icon = tab.icon;
