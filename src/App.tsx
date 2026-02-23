@@ -12,14 +12,15 @@ function App() {
 
   return (
     <div>
-      <div className="mt-3 mx-[2rem]">
+      <div className="md:hidden mt-3 mx-[2rem]">
         <Title/>
       </div>
-      <div className="mt-3 mx-[2rem] md:mx-[10rem]">
-        <div className="hidden md:flex mb-10 sticky top-3 z-50">
+      
+        <div className="hidden md:flex mb-10 sticky top-0 z-50">
           <DesktopNavBar/>
         </div>
 
+      <div className="mx-[2rem] md:mx-[10rem]">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/projects" element={<Projects/>}/>
