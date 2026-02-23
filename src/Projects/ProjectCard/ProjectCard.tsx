@@ -1,10 +1,7 @@
 import type { Project } from '../ProjectList';
-// import { Image } from 'lucide-react';
 import { Link, Lightbulb } from 'lucide-react';
-// import dummy from '../../assets/dummy.webp';
 import ReactPlayer from 'react-player';
-import GitHub from '../../assets/github-mark.svg'
-
+const GitHub = "/assets/github-mark.svg"
 
 const ProjectCard = ({project}: {project: Project}) => {
     const badge = "bg-gray-100 rounded-3xl px-3 py-1 text-xs text-gray-700";

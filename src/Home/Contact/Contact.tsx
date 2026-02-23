@@ -1,6 +1,8 @@
 import { Mail } from 'lucide-react';
-import GitHub from '../../assets/github-mark.svg'
-import LinkedIn from '../../assets/InBug-Black.png'
+
+const GitHub = '/assets/github-mark.svg'
+const LinkedIn = '/assets/InBug-Black.png'
+
 const Contact = () => {
     const badge = "mb-10 w-fit px-1 py-1 text-sm md:text-md rounded-3xl bg-neutral-50 border-2 border-white shadow-lg flex gap-1 justify-center items-center cursor-pointer transition-all duration-300";
 

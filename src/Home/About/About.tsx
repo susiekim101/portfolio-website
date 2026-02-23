@@ -1,6 +1,5 @@
-import headshot from '../../assets/Susie_Kim_Headshot.png';
 import Contact from '../Contact/Contact';
-
+const headshot = '/assets/Susie_Kim_Headshot.png'
 const About = () => {
 
     return (
