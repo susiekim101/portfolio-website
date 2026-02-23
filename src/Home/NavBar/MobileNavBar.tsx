@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { House, Hammer, CalendarDays, PenLine} from 'lucide-react';
+import { House, Hammer, CalendarDays } from 'lucide-react';
 
 const MobileNavBar = () => {
     const tabs = [
@@ -53,10 +53,10 @@ const MobileNavBar = () => {
                         </NavLink>
                     )
                 })}
-                <div className="flex flex-col gap-1 items-center justify-center px-4 ">
+                {/* <div className="flex flex-col gap-1 items-center justify-center px-4 ">
                     <PenLine className="text-gray-700 w-5 h-5"/>
                     <a className="text-xs text-gray-700" href="https://dev-blog-five-lac.vercel.app/" target="_blank">Blog</a>
-                </div>
+                </div> */}
             </div>
         </div>
     );
