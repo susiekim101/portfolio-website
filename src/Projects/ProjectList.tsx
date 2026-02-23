@@ -64,9 +64,9 @@ const PROJECTS: Project[] = [
         // ]
     },
     {
-        title: "Personal Website",
+        title: "Personal Website V1",
         date: "July 2025",
-        description: "This website! A personal portfolio website to share a little bit about myself and my projects :)",
+        description: "The first personal portfolio website. Getting familiar with HTML and CSS to share a little bit about myself and my projects :)",
         skills: ["React", "Lucide", "TypeScript", "Tailwind"],
         repo: "https://github.com/susiekim101/susiekim101.github.io"
     },
@@ -112,9 +112,10 @@ const PROJECTS: Project[] = [
         //     "Leveraged Google Gemini 2.0 Flash API to automatically extract structured flight information from uploaded itineraries and match riders based on location and time overlap"
         // ],
         media: {
-            type: "video",
-            thumbnail: "/clouds2campus-demo.mp4",
-            caption: "Demo video of Clouds2Campus, including log in/sign up features and file upload with AI extraction"
+            type: "image",
+            thumbnail: "src/assets/clouds2campus-thumbnail.png",
+            src: "src/assets/clouds2campus-demo.gif",
+            caption: "Demo video of Clouds2Campus, including log in/sign up features and file upload with AI extraction",
         }
     },
     {
@@ -122,7 +123,13 @@ const PROJECTS: Project[] = [
         date: "February 2025",
         description: "Personal discovery quiz to help users discover new passions and hobbies. Includes a progress tracker to record daily activity logs.",
         skills: ["Hackathon", "HTML", "CSS", "Gemini", "Javascript", "Next.js", "Node.js", "MongoDB"],
-        repo: "https://github.com/katieyungchung/athenahacks25"
+        repo: "https://github.com/katieyungchung/athenahacks25",
+        media: {
+            type: "image",
+            thumbnail: "src/assets/timeleaf-thumbnail.png",
+            src: "src/assets/timeleaf-demo.gif",
+            caption: "Demo video of TimeLeaf, walking through the user authentication step through AI-generated suggestions for hobbies"
+        }
     }
 ]
 

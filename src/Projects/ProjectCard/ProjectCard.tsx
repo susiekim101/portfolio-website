@@ -1,6 +1,6 @@
 import type { Project } from '../ProjectList';
 // import { Image } from 'lucide-react';
-import { Link } from 'lucide-react';
+import { Link, Lightbulb } from 'lucide-react';
 // import dummy from '../../assets/dummy.webp';
 import ReactPlayer from 'react-player';
 import GitHub from '../../assets/github-mark.svg'
@@ -39,6 +39,12 @@ const ProjectCard = ({project}: {project: Project}) => {
                         height="100%"
                     />
                 </div>}
+
+                {!project.media && (
+                    <div className="bg-slate-100 h-full w-full flex justify-center items-center p-6">
+                        <Lightbulb className="h-full w-full text-amber-300"/>
+                    </div>
+                )}
             </div>
 
             <div className="flex flex-1 flex-col justify-between p-5 min-w-0">
