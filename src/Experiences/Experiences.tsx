@@ -6,7 +6,7 @@ import LEADERSHIP from "./LeadershipList";
 
 const Experiences = () => {
     return (
-        <div className="flex flex-col gap-10 my-5 mx-[3rem] lg:mx-[10rem]">
+        <div className="flex flex-col gap-10 my-5 ">
             <div>
                 <p className="text-xl font-bold mb-3">Education</p>
                 <EducationCard/>
