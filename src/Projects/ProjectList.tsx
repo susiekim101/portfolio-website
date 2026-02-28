@@ -24,7 +24,7 @@ const PROJECTS: Project[] = [
         link: "https://dev-blog-five-lac.vercel.app/",
         media: {
             type: "image",
-            thumbnail: "public/assets/dev-blog.png",
+            thumbnail: "/assets/dev-blog.png",
         },
     },
     {
@@ -35,8 +35,8 @@ const PROJECTS: Project[] = [
         repo: "https://github.com/susiekim101/bruin-plan",
         media: {
             type: "image",
-            thumbnail: "public/assets/bruin-plan-thumbnail.png",
-            src: "public/assets/bruin-plan-demo.gif",
+            thumbnail: "/assets/bruin-plan-thumbnail.png",
+            src: "/assets/bruin-plan-demo.gif",
         },
         // longDescription: [
         //     "A visual drag-an-drop interface to add courses to the user dashboard with secure user authentication with server-side JWT",
@@ -54,8 +54,8 @@ const PROJECTS: Project[] = [
         repo: "https://github.com/susiekim101/posco-mdp",
         media: {
             type: "video",
-            thumbnail: "public/assets/POSCO-thumbnail.png",
-            src: "public/assets/brick-demo.mp4",
+            thumbnail: "/assets/POSCO-thumbnail.png",
+            src: "/assets/brick-demo.mp4",
             caption: "Demonstration of brick simulation using Isaac Sim"
         },
         // longDescription: [
@@ -78,8 +78,8 @@ const PROJECTS: Project[] = [
         repo: "https://github.com/susiekim101/",
         media: {
             type: "image",
-            thumbnail: "public/assets/stile-thumbnail.png",
-            src: "public/assets/stile-demo.gif",
+            thumbnail: "/assets/stile-thumbnail.png",
+            src: "/assets/stile-demo.gif",
             caption: "Initial ideation for Tori in the House at a hackathon. Currently working on new iteration of this original project."
         },
         // longDescription: [
@@ -113,8 +113,8 @@ const PROJECTS: Project[] = [
         // ],
         media: {
             type: "image",
-            thumbnail: "public/assets/clouds2campus-thumbnail.png",
-            src: "public/assets/clouds2campus-demo.gif",
+            thumbnail: "/assets/clouds2campus-thumbnail.png",
+            src: "/assets/clouds2campus-demo.gif",
             caption: "Demo video of Clouds2Campus, including log in/sign up features and file upload with AI extraction",
         }
     },
@@ -126,8 +126,8 @@ const PROJECTS: Project[] = [
         repo: "https://github.com/katieyungchung/athenahacks25",
         media: {
             type: "image",
-            thumbnail: "public/assets/timeleaf-thumbnail.png",
-            src: "public/assets/timeleaf-demo.gif",
+            thumbnail: "/assets/timeleaf-thumbnail.png",
+            src: "/assets/timeleaf-demo.gif",
             caption: "Demo video of TimeLeaf, walking through the user authentication step through AI-generated suggestions for hobbies"
         }
     }
